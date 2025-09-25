@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id = "address1" class="iuh.fit.se.tuan6.ex2.Address">
+        <property name="street" value = "Nguyen Van Bao"></property>
+        <property name="country" value = "Viet Nam"></property>
+        <property name="city" value = "Ho Chi Minh"></property>
+    </bean>
+
+    <bean id = "address2" class="iuh.fit.se.tuan6.ex2.Address">
+        <property name="street" value = "Huynh Van Banh"></property>
+        <property name="country" value = "Viet Nam"></property>
+        <property name="city" value = "Ho Chi Minh"></property>
+    </bean>
+
+    <bean id = "person1" class="iuh.fit.se.tuan6.ex2.Person">
+        <property name="age" value="20"></property>
+        <property name="name" value = "Nguye Le Tram Anh"></property>
+        <property name="addresses">
+            <list>
+                <ref bean="address1"/>
+                <ref bean="address2"/>
+            </list>
+        </property>
+        <property name="emails">
+            <list>
+                <value>ntla12@gmail.com</value>
+                <value>anhlaai23@gmail.com</value>
+            </list>
+        </property>
+    </bean>
+
+
+
+
+</beans>
