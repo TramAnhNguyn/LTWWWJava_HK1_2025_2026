@@ -1,0 +1,17 @@
+CREATE DATABASE `employees` 
+USE `employees`;
+
+CREATE TABLE `Employee` (
+	`id` INT NOT NULL,
+	`role` VARCHAR(50) NOT NULL DEFAULT '',
+	`name` VARCHAR(50) NOT NULL DEFAULT '',
+	PRIMARY KEY (`id`)
+)
+
+INSERT INTO employee (id, role, name) VALUES 
+(1,'Manager', 'Alice Nguyen'),
+(2, 'Developer', 'Bob Tran'),
+(3, 'Tester', 'Charlie Le'),
+(4, 'Designer', 'Diana Pham'),
+(5, 'DevOps', 'Evan Do')
+;
