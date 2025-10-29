@@ -15,7 +15,7 @@ import lombok.*;
 public class Employee {
 
     @Id
-    private Long id;
+    private int id;
 
     private String firstName;
     private String lastName;
